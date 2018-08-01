@@ -1,0 +1,632 @@
+<html lang="en">
+<head>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, maximum-scale=1"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GAME</title>
+    <!--==========link css============-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--=========script js===============-->
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/circular-countdown.js"></script>
+
+    <!--====================fonts awesome icons===============-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!--===============================END Slider bar===============================-->
+    <div class="sliderBase">
+        <div class="sliderFancy"></div>
+        <div id="btnSUM" class="plus outputBET">
+            +
+        </div>
+        <form name="registrationForm">
+            <input class="slider" type="range" name="ageInputName" id="ageInputId" value="0" min="0" step="8" max="100" oninput="ageOutputId.value = ageInputId.value; $('#betName').html(setBetText(ageInputId.value));">
+        </form>
+        <div id="btnLess" class="sub outputBET">
+            -
+        </div>
+    </div>
+    <!--===============================END Slider bar===============================-->
+
+    <!--==============================multiTable============================-->
+    <div class="game">
+        <div class="btnTableCall">
+            <i class="fas fa-bars btnMultitable"></i>
+        </div>
+
+        <div class="multiTable" id="multiTable">
+            <div class="col-xs-12">
+                <div class="btnADD col-xs-12">
+                    <p>ADD</p>
+                </div>
+                <div class="btnTableADDGreen col-xs-12"></div>
+                <div class="btnTableADDRed col-xs-12"></div>
+                <div class="btnTableADDYellow col-xs-12"></div>
+            </div>
+        </div>
+        <!--==============================END multiTable============================-->
+        <!--===============================slider bar===============================-->
+
+        <div class="col-xs-12">
+            <div class="table">
+                <img src="svgGame/table-01.svg" alt="" srcset="">
+            </div>
+            <!--===================POT========================-->
+            <div class="pot">
+                <div class="col-xs-8">
+                    <p id="potBalance" class="potBalance">30000</p>
+                </div>
+                <div class="col-xs-4">
+                    <img class="imgPOT" src="img/pot.png" alt="">
+                </div>
+            </div>
+            <!--===================END POT========================-->
+            <!--==========================Cards in table=============================-->
+            <div class="col-xs-6 cartsTable">
+                <div class="baraja">
+                    <img class="cardsTable" src="svgCards/asOros.svg" alt="">
+                </div>
+                <div class="baraja">
+                    <img class="cardsTable" src="svgCards/KOros.svg" alt="">
+                </div>
+                <div class="baraja">
+                    <img class="cardsTable" src="svgCards/JOros.svg" alt="">
+                </div>
+                <div class="baraja">
+                    <img class="cardsTable" src="svgCards/QOros.svg" alt="">
+                </div>
+                <div class="baraja">
+                    <img class="cardsTable" src="svgCards/10Oros.svg" alt="">
+                </div>
+            </div>
+            <!--=======================================End cards in table==========================-->
+
+            <!--===================================players=======================================-->
+            <div class="player0 infoGamer">
+                <div>
+                    <div class="roundAvatar">
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="col-xs-12">
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player1">
+                <div class="infoRival">
+                    <div class="userAvatar">
+                    </div>
+                    <div class="userInfo">
+                        <p class="namePlayer">Lucky Boy</p>
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player2">
+                <div class="infoRival">
+                    <div class="userAvatar">
+                    </div>
+                    <div class="userInfo">
+                        <p class="namePlayer">Lucky Boy</p>
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player3">
+                <div class="infoRival">
+                    <div class="userAvatar">
+                    </div>
+                    <div class="userInfo">
+                        <p class="namePlayer">Lucky Boy</p>
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player4">
+                <div class="infoRival">
+                    <div class="userAvatar">
+                    </div>
+                    <div class="userInfo">
+                        <p class="namePlayer">Lucky Boy</p>
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player5">
+                <div class="infoRival">
+                    <div class="userAvatar">
+                    </div>
+                    <div class="userInfo">
+                        <p class="namePlayer">Lucky Boy</p>
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player6">
+                <div class="infoRival">
+                    <div class="userAvatar">
+                    </div>
+                    <div class="userInfo">
+                        <p class="namePlayer">Lucky Boy</p>
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player7">
+                <div class="infoRival">
+                    <div class="userAvatar">
+                    </div>
+                    <div class="userInfo">
+                        <p class="namePlayer">Lucky Boy</p>
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player8">
+                <div class="infoRival">
+                    <div class="userAvatar">
+                    </div>
+                    <div class="userInfo">
+                        <p class="namePlayer">Lucky Boy</p>
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+            <div class="player9">
+                <div class="infoRival">
+                    <div class="userAvatar">
+                    </div>
+                    <div class="userInfo">
+                        <p class="namePlayer">Lucky Boy</p>
+                        <p class="balancePlayer">$200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--========================================================END PLAYERS=================================================-->
+
+        <!--=======================================================BET=============================================================-->
+        <div class="betPlayer0"></div>
+        <div class="betPlayer1">
+            <div class="col-xs-6">
+                <img class="coinBetPlayer" src="img/coin.png" alt="">
+            </div>
+            <div class="col-xs-6">
+                <p class="betPlayerMoney">
+                    $400
+                </p>
+            </div>
+        </div>
+        <div class="betPlayer2">
+            <div class="col-xs-6">
+                <img class="coinBetPlayer" src="img/coin.png" alt="">
+            </div>
+            <div class="col-xs-6">
+                <p class="betPlayerMoney">
+                    $400
+                </p>
+            </div>
+        </div>
+        <div class="betPlayer3">
+            <div class="col-xs-6">
+                <img class="coinBetPlayer" src="img/coin.png" alt="">
+            </div>
+            <div class="col-xs-6">
+                <p class="betPlayerMoney">
+                    $400
+                </p>
+            </div>
+        </div>
+        <div class="betPlayer4">
+            <div class="col-xs-6">
+                <img class="coinBetPlayer" src="img/coin.png" alt="">
+            </div>
+            <div class="col-xs-6">
+                <p class="betPlayerMoney">
+                    $400
+                </p>
+            </div>
+        </div>
+        <div class="betPlayer5">
+            <div class="col-xs-6">
+                <img class="coinBetPlayer" src="img/coin.png" alt="">
+            </div>
+            <div class="col-xs-6">
+                <p class="betPlayerMoney">
+                    $400
+                </p>
+            </div>
+        </div>
+        <div class="betPlayer6">
+            <div class="col-xs-6">
+                <img class="coinBetPlayer" src="img/coin.png" alt="">
+            </div>
+            <div class="col-xs-6">
+                <p class="betPlayerMoney">
+                    $400
+                </p>
+            </div>
+        </div>
+        <div class="betPlayer7">
+            <div class="col-xs-6">
+                <img class="coinBetPlayer" src="img/coin.png" alt="">
+            </div>
+            <div class="col-xs-6">
+                <p class="betPlayerMoney">
+                    $400
+                </p>
+            </div>
+        </div>
+        <div class="betPlayer8">
+            <div class="col-xs-6">
+                <img class="coinBetPlayer" src="img/coin.png" alt="">
+            </div>
+            <div class="col-xs-6">
+                <p class="betPlayerMoney">
+                    $400
+                </p>
+            </div>
+        </div>
+        <div class="betPlayer9">
+            <div class="col-xs-6">
+                <img class="coinBetPlayer" src="img/coin.png" alt="">
+            </div>
+            <div class="col-xs-6">
+                <p class="betPlayerMoney">
+                    $400
+                </p>
+            </div>
+        </div>
+        <!--================================================================End BET===============================================-->
+
+        <!--=========================================================dealer coin==================================================-->
+        <div class="player0DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <div class="player1DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <div class="player2DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <div class="player3DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <div class="player4DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <div class="player5DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <div class="player6DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <div class="player7DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <div class="player8DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <div class="player9DealerCoin">
+            <div class="dealerCoin">
+                <img src="svgGame/dealer.svg" alt="">
+            </div>
+        </div>
+        <!--=========================================================END dealer coin==================================================-->
+
+        <!--=========================================================Cards backFace===================================================-->
+        <div class="cartBackFacePlayer1">
+            <div class="col-xs-6">
+                <img class="backFaceCard" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+            <div class="col-xs-6">
+                <img class="backFaceCard backFaceCard2" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+        </div>
+        <div class="cartBackFacePlayer2">
+            <div class="col-xs-6">
+                <img class="backFaceCard" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+            <div class="col-xs-6">
+                <img class="backFaceCard backFaceCard2" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+        </div>
+        <div class="cartBackFacePlayer3">
+            <div class="col-xs-6">
+                <img class="backFaceCard" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+            <div class="col-xs-6">
+                <img class="backFaceCard backFaceCard2" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+        </div>
+        <div class="cartBackFacePlayer4">
+            <div class="col-xs-6">
+                <img class="backFaceCard" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+            <div class="col-xs-6">
+                <img class="backFaceCard backFaceCard2" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+        </div>
+        <div class="cartBackFacePlayer5">
+            <div class="col-xs-6">
+                <img class="backFaceCard" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+            <div class="col-xs-6">
+                <img class="backFaceCard backFaceCard2" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+        </div>
+        <div class="cartBackFacePlayer6">
+            <div class="col-xs-6">
+                <img class="backFaceCard" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+            <div class="col-xs-6">
+                <img class="backFaceCard backFaceCard2" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+        </div>
+        <div class="cartBackFacePlayer7">
+            <div class="col-xs-6">
+                <img class="backFaceCard" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+            <div class="col-xs-6">
+                <img class="backFaceCard backFaceCard2" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+        </div>
+        <div class="cartBackFacePlayer8">
+            <div class="col-xs-6">
+                <img class="backFaceCard" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+            <div class="col-xs-6">
+                <img class="backFaceCard backFaceCard2" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+        </div>
+        <div class="cartBackFacePlayer9">
+            <div class="col-xs-6">
+                <img class="backFaceCard" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+            <div class="col-xs-6">
+                <img class="backFaceCard backFaceCard2" src="svgCards/BackCardCOM.svg" alt="">
+            </div>
+        </div>
+
+        <!--=========================================================END Cards backFace===================================================-->
+
+        <!--=========================================================SIT BUTTON===========================================================-->
+        <div class="sitBTNPlayer0">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <div class="sitBTNPlayer1">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <div class="sitBTNPlayer2">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <div class="sitBTNPlayer3">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <div class="sitBTNPlayer4">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <div class="sitBTNPlayer5">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <div class="sitBTNPlayer6">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <div class="sitBTNPlayer7">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <div class="sitBTNPlayer8">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <div class="sitBTNPlayer9">
+            <div class="sitBTN">
+                <p>SIT</p>
+            </div>
+        </div>
+        <!--=====================================================END SIT BUTTON===========================================================-->
+
+        <!--=====================================================timer====================================================================-->
+
+        <div class="timerplayer0">
+            <div class="timer0"></div>
+            <div style="position: absolute" class="launcher0">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button0">start</button>
+            </div>
+        </div>
+        <div class="timerplayer1">
+            <div class="timer1"></div>
+            <div style="position: absolute" class="launcher1">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button1">start</button>
+            </div>
+
+        </div>
+        <div class="timerplayer2">
+            <div class="timer2"></div>
+            <div style="position: absolute" class="launcher2">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button2">start</button>
+            </div>
+
+        </div>
+        <div class="timerplayer3">
+            <div class="timer3"></div>
+            <div style="position: absolute" class="launcher3">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button3">start</button>
+            </div>
+
+        </div>
+        <div class="timerplayer4">
+            <div class="timer4"></div>
+            <div style="position: absolute" class="launcher4">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button4">start</button>
+            </div>
+
+        </div>
+        <div class="timerplayer5">
+            <div class="timer5"></div>
+            <div style="position: absolute" class="launcher5">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button5">start</button>
+            </div>
+
+        </div>
+        <div class="timerplayer6">
+            <div class="timer6"></div>
+            <div style="position: absolute" class="launcher6">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button6">start</button>
+            </div>
+
+        </div>
+        <div class="timerplayer7">
+            <div class="timer7"></div>
+            <div style="position: absolute" class="launcher7">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button7">start</button>
+            </div>
+
+        </div>
+        <div class="timerplayer8">
+            <div class="timer8"></div>
+            <div style="position: absolute" class="launcher8">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button8">start</button>
+            </div>
+
+        </div>
+        <div class="timerplayer9">
+            <div class="timer9"></div>
+            <div style="position: absolute" class="launcher9">
+                <input type="text" class="delay form-control" value="8">
+                <button class="btn btn-danger button9">start</button>
+            </div>
+
+        </div>
+
+
+
+        <!--=================================================END timer====================================================================-->
+
+        <!--========================================================buttons in table======================================================-->
+        <div class="btnTable1">
+            <div class="btnInTable"></div>
+        </div>
+        <div class="btnTable2">
+            <div class="btnInTable">SIT IN</div>
+        </div>
+        <div class="btnTable3">
+            <div class="btnInTable">STAND</div>
+        </div>
+        <div class="btnTable4">
+            <div class="btnInTable"></div>
+        </div>
+        <div class="btnTable5">
+            <div class="btnInTable">H</div>
+        </div>
+        <!--========================================================END buttons in table======================================================-->
+
+        <!--=====================================================botton game=======================================================-->
+        <div class="col-xs-12 botons">
+            <div class="col-xs-10">
+                <div class="col-xs-7">
+                    <div class="betButton">
+                        <div class="buttonGamePlay">Fold</div>
+                    </div>
+                    <div class="betButton">
+                        <div class="buttonGamePlay">Raise</div>
+                    </div>
+                    <div class="betButton">
+                        <div class="buttonGamePlay">All In</div>
+                    </div>
+                    <div class="betButton">
+                        <div class="buttonGamePlay">XXXX</div>
+                    </div>
+                    <div class="betButton">
+                        <div class="buttonGamePlay">Min</div>
+                    </div>
+                </div>
+                <div class="col-xs-5">
+                    <div class="betButton">
+                        <div class="buttonGamePlay">1/2</div>
+                    </div>
+                    <div class="betButton">
+                        <div class="buttonGamePlay">3/4</div>
+                    </div>
+                    <div class="betButton">
+                        <div class="buttonGamePlay">Pot</div>
+                    </div>
+                    <div class="betButton">
+                        <div class="buttonGamePlay">Max</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="betButton outputBET outputBETlarge">
+                    $
+                    <output class="betEnlarge" name="ageOutputName" id="ageOutputId"></output>
+                </div>
+                <div class="betButton outputBET outputBETlarge" id="betName">
+
+                </div>
+            </div>
+        </div>
+        <!--======================================================END bottons===================================================-->
+    </div>
+    <!-- ======================================================GAME=========================================================-->
+</body>
+
+</html>

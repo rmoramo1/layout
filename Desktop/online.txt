@@ -1,0 +1,27 @@
+********************************************************
+shutterstock
+Usuario: gruposur
+Password: Abcd1234# 
+*********************************************************
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+explorer
+*******************************************************
+cpu
+PASWORD:CaroRoy,20
+*******************************************************
+ADOBE
+CORREO:rmoramo1@gmail.com
+PASSWORD:CaroAma,20
+*******************************************************
+MICROSOFT
+PASSWORD:roy123456
+*******************************************************
+BITBUCKET
+PASSWORD:AmaLea,20
+*******************************************************
+GITHUB
+PASSWORD:CaroRoy,20
+*******************************************************
+SOURCETREE
+PASSWORD:
+AmaLea,20

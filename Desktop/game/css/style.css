@@ -1,0 +1,801 @@
+@font-face
+{
+   font-family: "Futura";
+   src: url(../fonts/futura\ medium\ bt.ttf);
+}
+body{
+    font-family: "Futura"!important;
+    text-align: center!important;
+}
+.container-fluid{
+    padding: 0%!important;
+}
+.game{
+    width: 100%;
+    height: 100%;
+    background-image:url(../svgGame/fondo-01.svg);
+    overflow: hidden;
+}
+.table{
+}
+.cartsTable{
+    top: 29%;
+    position: absolute!important;
+    left: 25%;
+}
+.cardsTable{
+    width: 16.7rem;
+}
+.baraja{
+    width: 20%;
+    float: left;
+}
+/*--==========================================botons game============================================--*/
+.botons{
+    padding: 0!important;
+    height: 15%;
+    background: transparent
+}
+.botons{
+    display: flex;
+    justify-content: left;
+    background: #45484b;
+    background: -moz-linear-gradient(top, #45484b 0%, #d5d7dd 50%, #45484b 100%);
+    background: -webkit-linear-gradient(top, #45484b 0%,#d5d7dd 50%,#45484b 100%);
+    background: linear-gradient(to bottom, #45484b 0%,#d5d7dd 50%,#45484b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484b', endColorstr='#45484b',GradientType=0 );
+    border-style : Solid;
+    border-color : #514446;
+    border-color : rgba(81, 68, 70, 1);
+    border-width : 1px;
+    box-shadow: 0 0 10px #000;
+    position: absolute!important;
+    top: 85%;
+    z-index: 1234567;
+}
+.buttonGamePlay{
+     height: 80%;
+     background : -moz-linear-gradient(50% 98.46% 90deg,rgba(3, 22, 52, 1) 0%,rgba(4, 56, 87, 1) 80.18%,rgba(4, 65, 97, 1) 100%);
+     background : -webkit-linear-gradient(90deg, rgba(3, 22, 52, 1) 0%, rgba(4, 56, 87, 1) 80.18%, rgba(4, 65, 97, 1) 100%);
+     background : -webkit-gradient(linear,50% 98.46% ,50% 1.61% ,color-stop(0,rgba(3, 22, 52, 1) ),color-stop(0.8018,rgba(4, 56, 87, 1) ),color-stop(1,rgba(4, 65, 97, 1) ));
+     background : -o-linear-gradient(90deg, rgba(3, 22, 52, 1) 0%, rgba(4, 56, 87, 1) 80.18%, rgba(4, 65, 97, 1) 100%);
+     background : -ms-linear-gradient(90deg, rgba(3, 22, 52, 1) 0%, rgba(4, 56, 87, 1) 80.18%, rgba(4, 65, 97, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#031634', endColorstr='#044161' ,GradientType=0)";
+     background : linear-gradient(0deg, rgba(3, 22, 52, 1) 0%, rgba(4, 56, 87, 1) 80.18%, rgba(4, 65, 97, 1) 100%);
+     border-radius : 14px;
+    -moz-border-radius : 14px;
+    -webkit-border-radius : 14px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#044161',endColorstr='#031634' , GradientType=0);
+    -webkit-border-radius: 14px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 31px;
+    font-weight: bold;
+    padding: 14px 38px;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px #000;
+    border: 3px outset #ccc;
+    box-shadow: 0 0 20px #000;
+    line-height: 3em;
+}
+.buttonGamePlay:hover {
+    color: #000;
+    text-shadow: 0px 0px 5px #fff;
+    background: #ffb76b;
+    background: -moz-linear-gradient(top, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
+    background: -webkit-linear-gradient(top, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+    background: linear-gradient(to bottom, #ffb76b 0%,#ffa73d 50%,#ff7c00 51%,#ff7f04 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 );
+}
+.buttonGamePlay:active {
+	position:relative;
+	top:3px;
+}
+.betButton{
+    margin: .9%;
+    float: left;
+}
+.btnTableCall{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    cursor: pointer;
+    z-index: 1223;
+}
+.btnMultitable{
+    font-size: 4em;
+    color: #fff;
+    border: solid 5px #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btnTable1,.btnTable2,.btnTable3,.btnTable4,.btnTable5{
+    position: absolute;
+}
+.btnTable1{
+    top: 74rem;
+    left: 20rem;
+}
+.btnTable2{
+    top: 82rem;
+    left: 90rem;
+}
+.btnTable3{
+    top: 82rem;
+    left: 105rem;
+}
+.btnTable4{
+    top: 74rem;
+    left: 157rem
+}
+.btnTable5{
+    top: 2rem;
+    left: 159rem;
+}
+.btnInTable{
+    width: 132px;
+    height: 86px;
+    background : -moz-linear-gradient(50% 98.46% 90deg,rgba(3, 22, 52, 1) 0%,rgba(4, 56, 87, 1) 80.18%,rgba(4, 65, 97, 1) 100%);
+    background : -webkit-linear-gradient(90deg, rgba(3, 22, 52, 1) 0%, rgba(4, 56, 87, 1) 80.18%, rgba(4, 65, 97, 1) 100%);
+    background : -webkit-gradient(linear,50% 98.46% ,50% 1.61% ,color-stop(0,rgba(3, 22, 52, 1) ),color-stop(0.8018,rgba(4, 56, 87, 1) ),color-stop(1,rgba(4, 65, 97, 1) ));
+    background : -o-linear-gradient(90deg, rgba(3, 22, 52, 1) 0%, rgba(4, 56, 87, 1) 80.18%, rgba(4, 65, 97, 1) 100%);
+    background : -ms-linear-gradient(90deg, rgba(3, 22, 52, 1) 0%, rgba(4, 56, 87, 1) 80.18%, rgba(4, 65, 97, 1) 100%);
+   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#031634', endColorstr='#044161' ,GradientType=0)";
+    background : linear-gradient(0deg, rgba(3, 22, 52, 1) 0%, rgba(4, 56, 87, 1) 80.18%, rgba(4, 65, 97, 1) 100%);
+    border-radius : 14px;
+   -moz-border-radius : 14px;
+   -webkit-border-radius : 14px;
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#044161',endColorstr='#031634' , GradientType=0);
+   -webkit-border-radius: 14px;
+   display: inline-block;
+   cursor: pointer;
+   color: #ffffff;
+   font-family: Arial;
+   font-size: 31px;
+   font-weight: bold;
+   text-decoration: none;
+   text-shadow: 0px 0px 5px #000;
+   border: 3px outset #ccc;
+   box-shadow: 0 0 20px #000;
+   line-height: 76px;
+}
+.btnInTable:hover{
+    background: #b4ddb4;
+    background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%);
+    background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+    background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 );
+}
+.btnInTable:active {
+	position:relative;
+	top:3px;
+}
+.btnADD,.btnTableADDGreen,.btnTableADDRed,.btnTableADDYellow{
+    height: 50px;
+    border-radius: 20px;
+    margin-top: 12rem;
+    box-shadow: 0 0 10px #000;
+    background: #914244;
+    background: -moz-radial-gradient(center, ellipse cover, #914244 0%, #62112d 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #914244 0%,#62112d 100%);
+    background: radial-gradient(ellipse at center, #914244 0%,#62112d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#914244', endColorstr='#62112d',GradientType=1 );
+    border: 3px outset #ccc;
+} 
+.btnADD,.btnTableADDGreen,.btnTableADDRed,.btnTableADDYellow p{
+    color: #fff;
+    line-height: 46px;
+    font-size: 29px;
+} 
+
+.btnTableADDGreen{
+    background: #1b8910;
+    background: -moz-radial-gradient(center, ellipse cover, #1b8910 1%, #006837 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #1b8910 1%,#006837 100%);
+    background: radial-gradient(ellipse at center, #1b8910 1%,#006837 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b8910', endColorstr='#006837',GradientType=1 );
+}
+.btnTableADDRed{
+    background: #ff0000;
+    background: -moz-radial-gradient(center, ellipse cover, #ff0000 2%, #890000 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ff0000 2%,#890000 100%);
+    background: radial-gradient(ellipse at center, #ff0000 2%,#890000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#890000',GradientType=1 );
+}
+.btnTableADDYellow{
+    background: #ffff00;
+    background: -moz-radial-gradient(center, ellipse cover, #ffff00 0%, #a4a700 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ffff00 0%,#a4a700 100%);
+    background: radial-gradient(ellipse at center, #ffff00 0%,#a4a700 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#a4a700',GradientType=1 );
+}
+/*--==============================end botons game====================================--*/
+
+/*===========================================multitable====slider bar===============*/
+.multiTable{
+    width:120px;
+    height: 100%;
+    left: -200px;
+    background: #45484b;
+    background: -moz-linear-gradient(left, #45484b 0%, #d5d7dd 50%, #45484b 100%);
+    background: -webkit-linear-gradient(left, #45484b 0%,#d5d7dd 50%,#45484b 100%);
+    background: linear-gradient(to right, #45484b 0%,#d5d7dd 50%,#45484b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484b', endColorstr='#45484b',GradientType=1 );
+    position: absolute;
+    z-index: 1234567;
+}
+.sliderBase{
+    width: 155px;
+    height: 100%;
+    position: absolute;
+    left: 126em;
+    background: #45484b;
+    background: -moz-linear-gradient(left, #45484b 0%, #d5d7dd 50%, #45484b 100%);
+    background: -webkit-linear-gradient(left, #45484b 0%,#d5d7dd 50%,#45484b 100%);
+    background: linear-gradient(to right, #45484b 0%,#d5d7dd 50%,#45484b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484b', endColorstr='#45484b',GradientType=1 );
+    z-index: 123;
+}
+/*=============================================slider========================================*/
+.sliderFancy{
+    width: 118px;
+    height: 705px;
+    border-radius: 15px;
+    background: rgb(33,31,53);
+    background: -moz-linear-gradient(left, rgba(33,31,53,1) 0%, rgba(63,76,107,1) 49%, rgba(33,31,53,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(33,31,53,1) 0%,rgba(63,76,107,1) 49%,rgba(33,31,53,1) 100%);
+    background: linear-gradient(to right, rgba(33,31,53,1) 0%,rgba(63,76,107,1) 49%,rgba(33,31,53,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#211f35', endColorstr='#211f35',GradientType=1 );
+    border: 4px inset #ccc;
+    position: absolute;
+    top: 107px;
+    left: 19px;
+}
+#range {
+    -webkit-appearance: slider-vertical;
+    width: 20px;
+    height: 100px;
+}
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none!important;
+    width: 660px!important;
+    height: 25px!important;
+    background: #4c4c4c !important;
+    background: -moz-linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%) !important;
+    background: -webkit-linear-gradient(top, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%)!important;
+    background: linear-gradient(to bottom, #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ) !important;
+    outline: none!important;
+    opacity: 0.7!important;
+    border-radius: 25px;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: 446px;
+    position: absolute;
+    left: -250px;
+}
+.slider:hover {
+    opacity: 1!important;
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none!important;
+    appearance: none!important;
+    width: 100px!important;
+    height: 100px!important;
+    background: url('../img/pointer.png')!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size:80%!important;
+    background: #4CAF50;
+    cursor: pointer!important;
+}
+
+.slider::-moz-range-thumb {
+    width: 100px!important;
+    height: 100px!important;
+    background: url('../img/pointer.png')!important;
+    background-repeat: no-repeat!important;
+    background-position: center!important;
+    background-size:80%!important;
+    background: #4CAF50;
+    cursor: pointer!important;
+}
+.plus,.sub{
+    padding:0!important;   
+    position: absolute;
+    width: 76px;
+    height: 70px;
+    left: 27%;
+    bottom: 92%;
+    font-size: 40px!important;
+}
+.sub{
+    bottom: 16%;
+    left: 27%;
+}
+
+/*===========================================EDN slider========================================*/
+/*=========================================== end multitable====slider bar===============*/
+
+/*============================================SIT=========================================*/
+.sitBTNPlayer0,.sitBTNPlayer1,.sitBTNPlayer2,.sitBTNPlayer3,.sitBTNPlayer4,.sitBTNPlayer5,.sitBTNPlayer6,.sitBTNPlayer7,.sitBTNPlayer8,.sitBTNPlayer9{
+    position:absolute; 
+    display: none;
+}
+.sitBTNPlayer0{
+    top: 69rem;
+    left: 75rem;
+    z-index: 1234;
+}
+.sitBTNPlayer1{
+    top: 69rem;
+    left: 43rem;
+    z-index: 1234;
+}
+.sitBTNPlayer2{
+    top: 49rem;
+    left: 14rem;
+    z-index: 1234;
+}
+.sitBTNPlayer3{
+    top: 19rem;
+    left: 14rem;
+    z-index: 1234;
+}
+.sitBTNPlayer4{
+    top: 4rem;
+    left: 43rem;
+    z-index: 1234;
+}
+.sitBTNPlayer5{
+    top: 4rem;
+    left: 78rem;
+    z-index: 1234;
+}
+.sitBTNPlayer6{
+    top: 4rem;
+    left: 130rem;
+    z-index: 1234;
+}
+.sitBTNPlayer7{
+    top: 26rem;
+    left: 160rem;
+    z-index: 1234;
+}
+.sitBTNPlayer8{
+    top: 50rem;
+    left: 160rem;
+    z-index: 1234;
+}
+.sitBTNPlayer9{
+    top: 70rem;
+    left: 130rem;
+    z-index: 1234;
+}
+.sitBTN{
+    width: 132px;
+    height:132px;
+    background: #4f4f4f;
+    background: -moz-radial-gradient(center, ellipse cover, #4f4f4f 1%, #000000 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #4f4f4f 1%,#000000 100%);
+    background: radial-gradient(ellipse at center, #4f4f4f 1%,#000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#000000',GradientType=1 );
+    border-radius : 100px;
+   -moz-border-radius : 100px;
+   -webkit-border-radius : 100px;
+   -webkit-border-radius: 100px;
+   display: inline-block;
+   cursor: pointer;
+   color: #ffffff;
+   font-family: Arial;
+   font-size: 31px;
+   font-weight: bold;
+   text-decoration: none;
+   text-shadow: 0px 0px 5px #000;
+   border: 3px outset #ccc;
+   box-shadow: 0 0 20px #000;
+   line-height: 125px;
+}
+.sitBTN:hover{
+    background: #4f4f4f;
+    background: -moz-radial-gradient(center, ellipse cover, #4f4f4f 1%, #939393 3%, #282828 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #4f4f4f 1%,#939393 3%,#282828 100%);
+    background: radial-gradient(ellipse at center, #4f4f4f 1%,#939393 3%,#282828 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f4f', endColorstr='#282828',GradientType=1 );
+    text-shadow: 0px 0px 15px #000;
+}
+.sitBTN:active {
+	position:relative;
+	top:3px;
+}
+/*=========================================END SIT=========================================*/
+
+/*=============================================info players===============================================*/
+.roundAvatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(../img/avatarMuestra.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    border:4px inset #ccc;
+}
+.infoGamer,.infoRival{
+    width: 100px;
+    color: #fff;
+    border-radius: 10px 50px 10px 10px;
+    padding: 0!important;
+}
+.infoRival{
+    width: 50px;
+    border-radius: 50px 10px 10px 50px;
+}
+.userCont,.userInfo,.userAvatar{
+    width: 135px;
+    height: 135px;
+    border-radius: 100px;
+    background-color: #154360;
+    background-image: url(../img/avartar.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border:4px inset #ccc;
+    float: left;
+}
+.userInfo{
+    height: auto;
+    border:4px inset #2980b9;
+    border-radius: 15px;
+    background: #2980b9;
+    background: -moz-linear-gradient(top, #2980b9 0%, #154360 100%);
+    background: -webkit-linear-gradient(top, #2980b9 0%,#154360 100%);
+    background: linear-gradient(to bottom, #2980b9 0%,#154360 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2980b9', endColorstr='#154360',GradientType=0 );
+    top: 112px;
+    position: absolute;
+}
+.namePlayer,.balancePlayer{
+    font-size:2.5rem;
+}
+/*====================================pot=================================================*/
+.pot{  
+    height: 50px;
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    top: 23%;
+    right: 35%;
+    background: #006f30;
+    background: -moz-linear-gradient(top, #006f30 0%, #38c13f 51%, #006f30 100%);
+    background: -webkit-linear-gradient(top, #006f30 0%,#38c13f 51%,#006f30 100%);
+    background: linear-gradient(to bottom, #006f30 0%,#38c13f 51%,#006f30 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006f30', endColorstr='#006f30',GradientType=0 );
+    text-shadow: 1px 1px 1px #000000;
+    border-radius: 45px;
+    box-shadow: 0 0 10px #000;
+}
+.potBalance{
+    font-size: 2.8rem;
+    font-weight: bolder;
+}
+.imgPOT{
+    top: -60px;
+    position: absolute;
+    left: 7px;
+}
+/*====================================END pot=================================================*/
+
+/*====================================players=============================================*/
+.player0,.player1,.player2,.player3,.player4,.player5,.player6,.player7,.player8,.player9{
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: 1234;
+}
+.player0{
+    top:60%;
+    right:52%;
+}
+.player1{
+    top:61%;
+    right:75%;
+}
+.player2{
+    top:42%;
+    right:90%;
+}
+.player3{
+    top:15%;
+    right:90%;
+}
+.player4{
+    top:2%;
+    right:75%;
+}
+.player5{
+    top:2%;
+    right:57%;
+}
+.player6{
+    top:2%;
+    right:30%;
+}
+.player7{
+    top:21%;
+    right:14%;
+}
+.player8{
+    top:42%;
+    right:14%;
+}
+.player9{
+    top:61%;
+    right:30%;
+}
+/*==================================endPlayers================================================*/
+/*==================================Bet=======================================================*/
+.betPlayer0,.betPlayer1,.betPlayer2,.betPlayer3,.betPlayer4,.betPlayer5,.betPlayer6,.betPlayer7,.betPlayer8,.betPlayer9{
+    width: auto;
+    height: auto;
+    padding-right: 35px;
+    background: #006f30;
+    background: -moz-linear-gradient(left, #006f30 0%, #38c13f 51%, #006f30 100%);
+    background: -webkit-linear-gradient(left, #006f30 0%,#38c13f 51%,#006f30 100%);
+    background: linear-gradient(to right, #006f30 0%,#38c13f 51%,#006f30 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006f30', endColorstr='#006f30',GradientType=1 );
+    border-radius: 100px;
+    box-shadow: 0 0 5px #000;
+    position: absolute;
+    z-index: 123490;
+}
+.betPlayer0{
+    top: 55%;
+    left: 40%;
+}
+.betPlayer1{
+    top: 58%;
+    left: 27%;
+}
+.betPlayer2{
+    top: 44%;
+    left: 16%;
+}
+.betPlayer3{
+    top: 30%;
+    left: 16%;
+}
+.betPlayer4{
+    top: 22%;
+    left: 26%;
+}
+.betPlayer5{
+    top: 17%;
+    left: 48%;
+}
+.betPlayer6{
+    top: 22%;
+    left: 69%;
+}
+.betPlayer7{
+    top: 34%;
+    left: 75%;
+}
+.betPlayer8{
+    top: 45%;
+    left: 75%;
+}
+.betPlayer9{
+    top: 58%;
+    left: 62%;
+}
+.betPlayerMoney{
+    font-size: 2.4rem;
+    color: #fff;
+    margin: 0!important;
+}
+.coinBetPlayer{
+    position: absolute;
+    top: -16px;
+    right: 10px;
+}
+/*==================================End Bet=======================================================*/
+
+/*=================================dealer Coin====================================================*/
+.dealerCoin{
+    width: 50px;
+    height: 50px;
+}
+.player0DealerCoin{
+    position: absolute;
+    top: 66%;
+    left: 46%;
+    z-index: 122334;
+}
+.player1DealerCoin{
+    position: absolute;
+    top: 64%;
+    left: 28%;
+    z-index: 12044;
+}
+.player2DealerCoin{
+    position: absolute;
+    top: 46%;
+    z-index: 123456;
+    left: 13%;
+}
+.player3DealerCoin{
+    position: absolute;
+    top: 19%;
+    left: 13%;
+    z-index: 123457;
+}
+.player4DealerCoin{
+    position: absolute;
+    top: 6%;
+    left: 28%;
+    z-index: 1234;
+}
+.player5DealerCoin{
+    position: absolute;
+    top: 6%;
+    left: 46%;
+    z-index: 1234;
+}
+.player6DealerCoin{
+    position: absolute;
+    top: 6%;
+    left: 73%;
+    z-index: 1234;
+}
+.player7DealerCoin{
+    position: absolute;
+    top: 25%;
+    left: 89%;
+    z-index: 1234;
+}
+.player8DealerCoin{
+    position: absolute;
+    top: 46%;
+    left: 89%;
+    z-index: 1234;
+}
+.player9DealerCoin{
+    position: absolute;
+    top: 64%;
+    left: 73%;
+    z-index: 1234;
+}
+/*=================================END dealer Coin====================================================*/
+
+/*==================================cards backFace=====================================================*/
+.cartBackFacePlayer1,.cartBackFacePlayer2,.cartBackFacePlayer3,.cartBackFacePlayer4,.cartBackFacePlayer5,.cartBackFacePlayer6,.cartBackFacePlayer7,.cartBackFacePlayer8,.cartBackFacePlayer9{
+    position: absolute;
+    width: 14em;
+}
+.cartBackFacePlayer1{
+    top: 51em;
+    left: 41em;
+}
+.cartBackFacePlayer2{
+    top: 38em;
+    left: 21em;
+}
+.cartBackFacePlayer3{
+    top: 14em;
+    left: 21em;
+}
+.cartBackFacePlayer4{
+    top: 6em;
+    left: 41em;
+}
+.cartBackFacePlayer5{
+    top: 5em;
+    left: 69em;
+}
+.cartBackFacePlayer6{
+    top: 6em;
+    left: 103em;
+}
+.cartBackFacePlayer7{
+    top: 18em;
+    left: 106em;
+}
+.cartBackFacePlayer8{
+    top: 38em;
+    left: 106em;
+}
+.cartBackFacePlayer9{
+    top: 51em;
+    left: 84em;
+}
+.backFaceCard2{
+    position: absolute;
+    left: -50px;
+}
+/*==================================END cards backFace=====================================================*/
+
+/*========================================================timer=============================================*/
+.delay{
+ 
+}
+.timerplayer0,.timerplayer1,.timerplayer2,.timerplayer3,.timerplayer4,.timerplayer5,.timerplayer6,.timerplayer7,.timerplayer8,.timerplayer9{
+    position: absolute;
+    z-index: 1234;
+}
+.timerplayer0{
+    top: 64rem;
+    left: 71rem;
+}
+.timerplayer1{
+    top: 65.5rem;
+    left: 42.3rem;
+}
+.timerplayer2{
+    top: 45rem;
+    left: 13.5rem;
+}
+.timerplayer3{
+    top: 16rem;
+    left: 13.5rem;
+}
+.timerplayer4{
+    top: 1.5rem;
+    left: 42.5rem;
+}
+.timerplayer5{
+    top: 1.5rem;
+    left: 77rem;
+}
+.timerplayer6{
+    top: 1.5rem;
+    left: 128.5rem;
+}
+.timerplayer7{
+    top: 22rem;
+    left: 159.5rem;
+}
+.timerplayer8{
+    top: 45rem;
+    left: 159.5rem;
+}
+.timerplayer9{
+    top: 65.5rem;
+    left: 128.5rem;
+}
+/*=====================================================END timer=============================================*/
+/*=====================================================outputBET=============================================*/
+.outputBET,.outputBETlarge{
+    color: #fff;
+    font-size: 20px;
+    padding: 18px 63px;
+    background: #000;
+    border: #ccc 2px outset;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    float: left;
+}
+.outputBETlarge{
+    min-width: 150px;
+    min-height: 65px;
+    margin-top: 6px;
+}
+.betEnlarge{
+    color: #fff;
+    font-size: 20px;
+    float: right;
+}
+output{
+    padding: 0!important;
+}
+/*=================================================EBN outputBET=============================================*/
